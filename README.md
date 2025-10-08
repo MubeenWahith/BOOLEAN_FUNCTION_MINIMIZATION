@@ -37,14 +37,55 @@ Hardware – PCs, Cyclone II , USB flasher
 
 Developed by: RegisterNumber:*/
 
+i)
+
+module funct1(a,b,c,d,f1);
+
+input a,b,c,d;
+
+output f1;
+
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+
+endmodule
+
+ii)
+module funct2(w,x,y,z,f2);
+
+input w,x,y,z;
+
+output f2;
+
+assign f2=((~y & z)|( w & y )|(x & y));
+
+endmodule
 
 **RTL realization**
+
+F1:
+
+<img width="1147" height="602" alt="Screenshot 2025-10-08 132950" src="https://github.com/user-attachments/assets/68f77f18-3241-42f3-b42d-93ccbcb67d9f" />
+
+F2:
+
+<img width="979" height="532" alt="Screenshot 2025-10-08 133628" src="https://github.com/user-attachments/assets/2ad540c6-3370-44dd-bbdd-2132227576d5" />
+
 
 **Output:**
 
 **RTL**
 
-**Timing Diagram**
+**Timing Diagram**  
+
+F1:
+
+<img width="1919" height="596" alt="Screenshot 2025-10-08 133325" src="https://github.com/user-attachments/assets/a28510e5-b699-4288-98d3-842643debc25" />
+
+
+F2:
+
+<img width="1919" height="616" alt="Screenshot 2025-10-08 134006" src="https://github.com/user-attachments/assets/b6e4bf63-423e-4a49-939b-54d6599f5330" />
+
 
 **Result:**
 
